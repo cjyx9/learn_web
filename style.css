@@ -1,0 +1,118 @@
+body {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: black;
+    background-image: url("image/banner.jpg");
+    padding: 0;
+    margin: 0;
+    height: 180px;
+    text-align: center;
+}
+
+header a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.features {
+    background: white;
+    color: grey;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 470px) {
+    .phone {
+        display: inline-block;
+    }
+    .desk {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 471px) {
+    .phone {
+        display: none;
+    }
+    .desk {
+        display: inline-block;
+    }
+}
+
+header .logo a {
+    position: relative;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    border: 3px;
+    background-image: url("image/logo.png");
+    width: 120px;
+    height: 80px;
+    top: 8px;
+    display: inline-block;
+}
+
+.features figure {
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: small;
+    width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.features figure img {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: grey 0 0 6px;
+    border: 1px solid white;
+    margin-bottom: 5px;
+}
+
+section {
+    background: white;
+    color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.list div {
+    background: blue;
+    margin: auto;
+    width: 100px;
+}
+
+footer {
+    background: black;
+    padding: 10px 20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+footer {
+    background: black;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
